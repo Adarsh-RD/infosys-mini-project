@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,13 +11,13 @@
 </head>
 <body>
 
-<nav class="navbar navbar-light bg-white py-3">
+<nav class="navbar navbar-light bg-dark py-3">
   <div class="container">
-    <span class="navbar-brand text-primary fw-bold">
+    <span class="navbar-brand text-danger fw-bold">
       <i class="fa-solid fa-shield-halved me-2"></i> Identity Resolution Engine
     </span>
     <div>
-      <a href="signup.html" class="btn btn-outline-primary me-2">Signup</a>
+      <a href="signup.html" class="btn btn-outline-danger me-2">Signup</a>
       <a href="index.html" class="btn btn-light">Home</a>
     </div>
   </div>
@@ -54,7 +54,7 @@
             <div class="d-flex mb-2 align-items-center">
               <input type="text" id="captchaInput" class="form-control me-2"
                      placeholder="Enter Captcha" required>
-              <span id="captchaText" class="fw-bold fs-5 text-primary"></span>
+              <span id="captchaText" class="fw-bold fs-5 text-danger"></span>
             </div>
 
             <button type="button" id="refreshCaptcha"
@@ -65,7 +65,7 @@
             <div id="captchaError" class="text-danger small mt-1"></div>
           </div>
 
-          <button type="submit" class="btn btn-primary w-100 mt-2">
+          <button type="submit" class="btn btn-danger w-100 mt-2">
             Login
           </button>
 
