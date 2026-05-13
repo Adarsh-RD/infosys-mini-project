@@ -9,10 +9,6 @@
   <!-- Icons -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
   <style>
-    body {
-      background: linear-gradient(140deg, #eef4ff, #ffffff);
-      font-family: 'Segoe UI', sans-serif;
-    }
     .hero-text h1 {
       font-weight: 800;
       font-size: 45px;
@@ -82,7 +78,7 @@
 
 <body>
   <!-- NAVBAR -->
-  <nav class="navbar navbar-light bg-dark shadow-sm py-3">
+  <nav class="navbar navbar-dark bg-dark shadow-sm py-3">
     <div class="container">
       <span class="navbar-brand fw-bold fs-4 text-danger">
         <i class="fa-solid fa-shield-halved me-2"></i> Identity Resolution Engine
@@ -124,8 +120,15 @@
 
       <!-- RIGHT ILLUSTRATION -->
       <div class="col-md-6 text-center mt-4 mt-md-0">
-        <img src="https://cdn-icons-png.flaticon.com/512/10067/10067068.png" class="hero-img"
-          alt="Identity illustration" />
+        
+        <div class="hero-img-container" style="position: relative; width: 100%; max-width: 400px; margin: 0 auto; animation: float 4s infinite ease-in-out;">
+           <div style="font-size: 200px; color: #ef4444; text-shadow: 0 0 40px rgba(239, 68, 68, 0.4);">
+             <i class="fa-solid fa-shield-halved"></i>
+           </div>
+           <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); font-size: 80px; color: #1c1f26;">
+             <i class="fa-solid fa-link"></i>
+           </div>
+        </div>
       </div>
     </div>
   </div>
@@ -142,7 +145,7 @@
             <i class="fa-solid fa-fingerprint"></i>
           </div>
           <h5 class="fw-bold">Encrypted Identity Storage</h5>
-          <p class="text-muted">No raw identity is ever stored. Everything is salted and SHA-256 hashed.</p>
+          <p class="text-light">No raw identity is ever stored. Everything is salted and SHA-256 hashed.</p>
         </div>
       </div>
 
@@ -152,7 +155,7 @@
             <i class="fa-solid fa-shield"></i>
           </div>
           <h5 class="fw-bold">Bloom Filter Matching</h5>
-          <p class="text-muted">Fast privacy-preserving comparisons without revealing the actual identity data.</p>
+          <p class="text-light">Fast privacy-preserving comparisons without revealing the actual identity data.</p>
         </div>
       </div>
 
@@ -162,7 +165,7 @@
             <i class="fa-solid fa-lock"></i>
           </div>
           <h5 class="fw-bold">Zero Knowledge Proof (ZKP)</h5>
-          <p class="text-muted">Simulated ZKP ensures verification without exposing sensitive details.</p>
+          <p class="text-light">Simulated ZKP ensures verification without exposing sensitive details.</p>
         </div>
       </div>
 
@@ -172,7 +175,7 @@
             <i class="fa-solid fa-mobile-screen"></i>
           </div>
           <h5 class="fw-bold">OTP Phone Verification</h5>
-          <p class="text-muted">Secure OTP validation workflow for phone-based identity confirmation.</p>
+          <p class="text-light">Secure OTP validation workflow for phone-based identity confirmation.</p>
         </div>
       </div>
 
@@ -182,7 +185,7 @@
             <i class="fa-solid fa-link"></i>
           </div>
           <h5 class="fw-bold">Link, Verify, Unlink</h5>
-          <p class="text-muted">Complete lifecycle of identity management — handled securely.</p>
+          <p class="text-light">Complete lifecycle of identity management — handled securely.</p>
         </div>
       </div>
 
@@ -192,7 +195,7 @@
             <i class="fa-solid fa-user-lock"></i>
           </div>
           <h5 class="fw-bold">User-Centric & Transparent</h5>
-          <p class="text-muted">You control what is linked, verified or removed — with full transparency.</p>
+          <p class="text-light">You control what is linked, verified or removed — with full transparency.</p>
         </div>
       </div>
     </div>
